@@ -21,7 +21,7 @@ setuptools.setup(
 
     # pip3 install test-lib
 
-    name="test-lib", # Replace with your own username
+    name="HamodyToolp", # Replace with your own username
 
     version="0.2.1",
 
