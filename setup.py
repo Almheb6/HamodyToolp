@@ -1,5 +1,5 @@
 import setuptools
-import HamodyToolp import Hamody
+import HamodyToolp from Hamody
 
 with open("README.md", "r", encoding="utf-8") as fh: long_description = fh.read()
 
