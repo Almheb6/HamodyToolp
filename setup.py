@@ -1,10 +1,7 @@
 import setuptools
-from HamodyToolp import Hamody
+import HamodyToolp import Hamody
 
-with open('README.md', 'r') as fh:
-    long_description = fh.read()
-with open('requirements.txt','r') as fr:
-    requires = fr.read().split('\n')
+with open("README.md", "r", encoding="utf-8") as fh: long_description = fh.read()
 
 setuptools.setup(
     name="HamodyToolp",
