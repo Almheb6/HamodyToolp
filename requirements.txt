@@ -1,0 +1,7 @@
+pyfiglet
+arabic_reshaper
+python-bidi
+HamodyToolp
+requests
+instaloader
+user_agent
