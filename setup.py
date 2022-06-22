@@ -1,24 +1,64 @@
 import setuptools
-import HamodyToolp from Hamody
 
-with open("README.md", "r", encoding="utf-8") as fh: long_description = fh.read()
+
+
+
+with open("README.md", "r", encoding="utf-8") as fh:
+
+    long_description = fh.read()
+
+
+
+
+with open('requirements.txt','r') as fr:
+
+    requires = fr.read().split('\n')
+
+
+
 
 setuptools.setup(
-    name="HamodyToolp",
-    version="1.0.0",
+
+    # pip3 install test-lib
+
+    name="test-lib", # Replace with your own username
+
+    version="0.2.1",
+
     author="MahmoudAyman",
+
     author_email="mahmoudhshs8@gmail.com",
-    description='7AMODY TOOLp',
+
+    description="7AMODY TOOLp",
+
     long_description=long_description,
-    long_description_content_type='text/markdown',
-    url='https://github.com/Almheb6/HamodyToolp',
-    packages=["HamodyToolp"],
+
+    long_description_content_type="text/markdown",
+
+    url="https://github.com/Almheb6/HamodyToolp",
+
+    project_urls={
+
+        "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+
+    },
+
     classifiers=[
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-        'License :: OSI Approved :: MIT License'],
+
+        "Programming Language :: Python :: 3",
+
+        "License :: OSI Approved :: MIT License",
+
+        "Operating System :: OS Independent",
+
+    ],
+
+    package_dir={"": "src"},
+
+    packages=setuptools.find_packages(where="src"),
+
+    python_requires=">=3.6",
+
     install_requires=requires,
+
 )
